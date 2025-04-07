@@ -5,20 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Checklist Page</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; text-align: center; }
-        .container { max-width: 400px; margin: auto; }
-        .option { display: flex; align-items: center; justify-content: left; margin: 5px 0; }
-        input[type="checkbox"] { margin-right: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left; /* 左揃え */
+            margin: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            text-align: left; /* 左揃え */
+        }
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+        .checklist li {
+            margin: 5px 0;
+        }
+        .checklist input {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Test Checklist Page</h1>
-        <label class="option"><input type="checkbox"> Option 1</label>
-        <label class="option"><input type="checkbox"> Option 2</label>
-        <label class="option"><input type="checkbox"> Option 3</label>
-        <label class="option"><input type="checkbox"> Option 4</label>
-        <label class="option"><input type="checkbox"> Option 5</label>
-    </div>
+
+    <h2>見積り、チェック項目</h2>
+    <ul class="checklist">
+        <li><input type="checkbox"> 未納がないか</li>
+        <li><input type="checkbox"> 受付可否</li>
+        <li><input type="checkbox"> PhotoCube、クラウドではなく物理的の説明</li>
+        <li><input type="checkbox"> ワイチャやPhotoCube既に持っていないか</li>
+        <li><input type="checkbox"> PhotoCube対応端末か</li>
+    </ul>
+
+    <h2>引継ぎ</h2>
+    <ul class="checklist">
+        <li><input type="checkbox"> 廃止項目</li>
+        <li><input type="checkbox"> PKGアップデートか新規か</li>
+        <li><input type="checkbox"> ニフティアップデートか新規か</li>
+        <li><input type="checkbox"> ADクリーナー設定台数</li>
+        <li><input type="checkbox"> CB有無</li>
+    </ul>
+
+    <h2>ご案内Chromebook</h2>
+    <ul class="checklist">
+        <li><input type="checkbox"> 光なし、利用量1G以下、高齢</li>
+        <li><input type="checkbox"> 見づらい＆打ちづらい</li>
+        <li><input type="checkbox"> 最近タブレットへ移行されている</li>
+        <li><input type="checkbox"> スマホをそのまま大きくしたもの</li>
+        <li><input type="checkbox"> 端末だけは、金額変わらない。</li>
+        <li><input type="checkbox"> 家にWifiがないので、ラインのメッセージくらいしかできない。</li>
+        <li><input type="checkbox"> それでもよろしければ、この値段で今日持って帰れます。</li>
+        <li><input type="checkbox"> 0円機種</li>
+        <li><input type="checkbox"> PKG+ADC +533</li>
+        <li><input type="checkbox"> 現住所</li>
+        <li><input type="checkbox"> タブ使わず携帯で調べ物沢山→ やめた方が良い</li>
+        <li><input type="checkbox"> 回線必要（値引）</li>
+        <li><input type="checkbox"> 頭金</li>
+        <li><input type="checkbox"> 事務手数料</li>
+        <li><input type="checkbox"> 電話ブロックも外れてしまう事</li>
+        <li><input type="checkbox"> パソコンでできる事全部はできない</li>
+        <li><input type="checkbox"> GPSなし</li>
+        <li><input type="checkbox"> d系サービス使えない</li>
+        <li><input type="checkbox"> ドコモメール多分使えない</li>
+        <li><input type="checkbox"> ご家族様からご指摘</li>
+        <li><input type="checkbox"> セキュリティ対策が入っている</li>
+        <li><input type="checkbox"> システムが軽いので早い</li>
+    </ul>
+
+    <h2>LAMP Tab登録</h2>
+    <ul class="checklist">
+        <li><input type="checkbox"> LAMP Tabでできない</li>
+        <li><input type="checkbox"> 新規・機変 5Gプラン全て（irumoも）</li>
+        <li><input type="checkbox"> 機変 5Gデータプラス→ 4Gデータプラス</li>
+        <li><input type="checkbox"> LAMP Tabでできる</li>
+        <li><input type="checkbox"> 新規 4Gデータプラス</li>
+        <li><input type="checkbox"> 機変 4Gデータプラス→ 4Gデータプラス</li>
+    </ul>
+
 </body>
 </html>
